@@ -13,14 +13,14 @@ import { FaHeart } from "react-icons/fa";
 
 // footer icon 
 
-import { MdMenuOpen } from "react-icons/md";
-
 import { FaInstagram } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { IoIosMail } from "react-icons/io";
 import { FaLinkedin } from "react-icons/fa";
 import { MdCall } from "react-icons/md";
+import Navbar from '../Components/Navbar';
+import ProjectCard from '../Components/ProjectCard';
 
 const skills = [
   "html",
@@ -53,60 +53,50 @@ const briefSkill = {
   "API": "I am learning to design, build, and consume APIs to connect different parts of web applications. This skill helps me in full-stack development and integration."
 }
 
+const projects = [
+  {
+    title : "Rentwheels – Vehicle Rentle webapp",
+    intro : "A conceptual project focused on creating a Software Requirements Specification for a car rental web platform. The aim is to define features like vehicle booking, user registration, pricing, and admin management.",
+    skils : [<FaReact />, <SiVite/>, <FaCss3/>, <FaNodeJs/>, <SiExpress/>, <SiMongodb/>],
+    img : "images/projects/1.png",
+    link1 : "",
+    link2 : "https://rentwheelss.vercel.app/"
+  },
+  {
+    title : "Shopingo – E-commerce Web App",
+    intro : "A modern, dynamic e-commerce website built with React.js. Features include product listings via third-party APIs, user login/logout, cart functionality using React Context API, and responsive design for a smooth shopping experience.",
+    skils : [<FaReact />, <SiVite/>, <FaCss3/>, <FaNodeJs/>, <SiExpress/>, <SiMongodb/>],
+    img : "images/projects/2.png",
+    link1 : "",
+    link2 : "https://shopingo.vercel.app/"
+  },
+  {
+    title : "Appsobytes – Business Portfolio Website",
+    intro : "A professional business website showcasing software development services. Highlights the brand, services offered, and contact options for clients.",
+    skils : [<FaReact />, <SiVite/>, <FaCss3/>, <FaNodeJs/>, <SiExpress/>, <SiMongodb/>],
+    img : "images/projects/3.png",
+    link1 : "",
+    link2 : "https://appsobytes.com/"
+  },
+  {
+    title : "Foodo – Food Delivery App UI",
+    intro : "A responsive and interactive food delivery website UI, designed with React. Includes homepage, food categories, search bar, and a sleek, modern design.",
+    skils : [<FaReact />, <SiVite/>, <FaCss3/>, <FaNodeJs/>, <SiExpress/>, <SiMongodb/>],
+    img : "images/projects/4.png",
+    link1 : "",
+    link2 : "https://myfoodo.vercel.app/"
+  },
+]
+
 function App() {
 
-  // const [fontsize, setFontsize] = useState(0)
-  
   document.body.classList = "selection:text-blue-500"
-  
-  // document.addEventListener("scroll", ()=> {
-    // if(window.pageYOffset < 250){
-      // document.getElementById("nav").style.position = 'absolute';
-      // setFontsize(window.pageYOffset/4)
-    // }else if(window.pageYOffset > 250){
-      // document.getElementById("nav").style.position="fixed";
-      // // document.getElementById("nav").style.width = "100vw"
-      // }
-    // console.log(Math.round(window.pageYOffset))
-    // console.log(fontsize)
-  // })
-
-  
-  const [menuStatus, setmenuStatus] = useState(false)
-
-  const handleMenu = () => {
-    if(menuStatus) {
-      setmenuStatus(false)
-      document.body.style.overflowY = 'scroll'
-    }else {
-      setmenuStatus(true)
-      document.body.style.overflowY = 'hidden'
-    }
-  }
 
   return (
     <>
-     <nav id='nav' className='max-md:w-[100%] max-md:top-0 max-md:rounded-none max-[1250px]:w-[80%] first-line: bg-gray-900 px-6 py-3 flex justify-between items-center w-[50%] max-w-[1400px] m-auto rounded-2xl absolute left-[50%] top-[20px] translate-x-[-50%]'>
-      <div className='text-blue-500 text-3xl font-extrabold'>RK</div>
-      {menuStatus ?
-      <div className='text-red-500 navlinks'>
-        <ul className='max-md:py-10 max-lg:flex-col max-lg:bg-gray-900 max-lg:p-5 max-lg:gap-2 max-lg:rounded-lg flex gap-10 font-semibold text-gray-500'>
-          <Link to="/" className='hover:text-blue-500' >Home</Link>
-          <Link to="about" className='hover:text-blue-500' >About</Link>
-          <Link to="/" className='hover:text-blue-500' >Projects</Link>
-          <Link to="/" className='hover:text-blue-500' >Skills</Link>
-        </ul>
-      </div>
+     <Navbar />
 
-      : ""
-      }
-
-      <button className='max-lg:hidden bg-blue-500 hover:bg-blue-600 py-3 px-12 font-semibold rounded-xl text-white transition'>Resume</button>
-      
-      <MdMenuOpen onClick={() => handleMenu()} className='text-[35px] text-white cursor-pointer lg:hidden' />
-     </nav>
-
-     <header className='w-[100%] bg-gray-950 text-gray-400 selection:text-blue-500 shadow-lg shadow-gray-100/50'>
+     <header className='w-[100%] bg-gray-950 text-gray-400 selection:text-blue-500 shadow-lg shadow-gray-100/50 overflow-x-hidden'>
       
       <div className='max-md:py-[250px] w-[90%] max-w-[1400px] m-auto text-center py-[300px]'>
         <p className='text-2xl italic'>Hello there!</p>
@@ -178,92 +168,22 @@ function App() {
         <h4 className='py-5 text-2xl text-gray-400 font-semibold capitalize'>Projects that define my skills</h4>
         
         <div className='max-sm:grid-cols-1 max-lg:grid-cols-2 max-lg:gap-3 grid gap-5 grid-cols-[45%_55%]'>
-          <div className='max-lg:p-3 bg-gray-900 p-5  rounded-xl'>
-            <img src="images/projects/1.png" className="max-md:h-[230px] w-[100%] h-[300px] rounded-[12px]" alt="" />
-            <p className='text-[22px] font-semibold pt-2'>Rentwheels – Vehicle Rentle webapp</p>
-            <p className='text-gray-500 text-[15px]'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis non molestiae quia ullam vel maxime dolor esse. Molestias, quibusdam distinctio.</p>
-
-            <div className='flex gap-3 my-3 flex-wrap'>
-              <div className='bg-gray-700 hover:bg-blue-500 p-2 border-2 rounded-full'><FaReact /></div>
-              <div className='bg-gray-700 hover:bg-blue-500 p-2 border-2 rounded-full'><SiVite /></div>
-              <div className='bg-gray-700 hover:bg-blue-500 p-2 border-2 rounded-full'><FaCss3 /></div>
-              <div className='bg-gray-700 hover:bg-blue-500 p-2 border-2 rounded-full'><FaNodeJs /></div>
-              <div className='bg-gray-700 hover:bg-blue-500 p-2 border-2 rounded-full'><SiExpress /></div>
-              <div className='bg-gray-700 hover:bg-blue-500 p-2 border-2 rounded-full'><SiMongodb /></div>
-            </div>
-            <div className='w-[100%] flex gap-4 pt-4 text-center'>
-              <Link to="/" href="/" className='w-[100%] py-3 bg-blue-500 rounded-xl'>Documentation</Link>
-              <Link to="/" href="/" className='w-[100%] py-3 bg-gray-700 rounded-xl'>Visit Site</Link>
-            </div>
-          </div>
-
-          <div className='max-lg:p-3 bg-gray-950 p-5  rounded-xl'>
-            <img src="images/projects/2.png" className="max-md:h-[230px] max-lg:h-[300px] w-[100%] h-[350px] rounded-[12px]" alt="" />
-            <p className='text-[22px] font-semibold pt-2'>Rentwheels – Vehicle Rentle webapp</p>
-            <p className='text-gray-500 text-[15px]'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis non molestiae quia ullam vel maxime dolor esse. Molestias, quibusdam distinctio.</p>
-
-            <div className='flex gap-3 my-3 flex-wrap'>
-              <div className='bg-gray-700 hover:bg-blue-500 p-2 border-2 rounded-full'><FaReact /></div>
-              <div className='bg-gray-700 hover:bg-blue-500 p-2 border-2 rounded-full'><SiVite /></div>
-              <div className='bg-gray-700 hover:bg-blue-500 p-2 border-2 rounded-full'><FaCss3 /></div>
-              <div className='bg-gray-700 hover:bg-blue-500 p-2 border-2 rounded-full'><FaNodeJs /></div>
-              <div className='bg-gray-700 hover:bg-blue-500 p-2 border-2 rounded-full'><SiExpress /></div>
-              <div className='bg-gray-700 hover:bg-blue-500 p-2 border-2 rounded-full'><SiMongodb /></div>
-            </div>
-            <div className='w-[100%] flex gap-4 pt-4 text-center'>
-              <Link to="/" href="/" className='w-[100%] py-3 bg-blue-500 rounded-xl'>Documentation</Link>
-              <Link to="/" href="/" className='w-[100%] py-3 bg-gray-700 rounded-xl'>Visit Site</Link>
-            </div>
-          </div>
+          <ProjectCard projects={projects[0]} height1={"300px"} height2={"230px"} />
+          <ProjectCard projects={projects[1]} height1={"350px"} height2={"300px"} height3={"230px"} />
         </div> <br />
         
         <div className='max-sm:grid-cols-1 max-lg:grid-cols-2 grid gap-5 grid-cols-[55%_45%]'>
-          <div className='max-lg:p-3 bg-gray-950 p-5  rounded-xl'>
-            <img src="images/projects/3.png" className="max-md:h-[230px] max-lg:h-[300px] w-[100%] h-[350px] rounded-[12px]" alt="" />
-            <p className='text-[22px] font-semibold pt-2'>Rentwheels – Vehicle Rentle webapp</p>
-            <p className='text-gray-500 text-[15px]'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis non molestiae quia ullam vel maxime dolor esse. Molestias, quibusdam distinctio.</p>
-
-            <div className='flex gap-3 my-3 flex-wrap'>
-              <div className='bg-gray-700 hover:bg-blue-500 p-2 border-2 rounded-full'><FaReact /></div>
-              <div className='bg-gray-700 hover:bg-blue-500 p-2 border-2 rounded-full'><SiVite /></div>
-              <div className='bg-gray-700 hover:bg-blue-500 p-2 border-2 rounded-full'><FaCss3 /></div>
-              <div className='bg-gray-700 hover:bg-blue-500 p-2 border-2 rounded-full'><FaNodeJs /></div>
-              <div className='bg-gray-700 hover:bg-blue-500 p-2 border-2 rounded-full'><SiExpress /></div>
-              <div className='bg-gray-700 hover:bg-blue-500 p-2 border-2 rounded-full'><SiMongodb /></div>
-            </div>
-            <div className='w-[100%] flex gap-4 pt-4 text-center'>
-              <Link to="/" href="/" className='w-[100%] py-3 bg-blue-500 rounded-xl'>Documentation</Link>
-              <Link to="/" href="/" className='w-[100%] py-3 bg-gray-700 rounded-xl'>Visit Site</Link>
-            </div>
-          </div>
-
-          <div className='max-lg:p-3 bg-gray-900 p-5  rounded-xl'>
-            <img src="images/projects/4.png" className="max-md:h-[230px] w-[100%] h-[300px] rounded-[12px]" alt="" />
-            <p className='text-[22px] font-semibold pt-2'>Rentwheels – Vehicle Rentle webapp</p>
-            <p className='text-gray-500 text-[15px]'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis non molestiae quia ullam vel maxime dolor esse. Molestias, quibusdam distinctio.</p>
-
-            <div className='flex gap-3 my-3 flex-wrap'>
-              <div className='bg-gray-700 hover:bg-blue-500 p-2 border-2 rounded-full'><FaReact /></div>
-              <div className='bg-gray-700 hover:bg-blue-500 p-2 border-2 rounded-full'><SiVite /></div>
-              <div className='bg-gray-700 hover:bg-blue-500 p-2 border-2 rounded-full'><FaCss3 /></div>
-              <div className='bg-gray-700 hover:bg-blue-500 p-2 border-2 rounded-full'><FaNodeJs /></div>
-              <div className='bg-gray-700 hover:bg-blue-500 p-2 border-2 rounded-full'><SiExpress /></div>
-              <div className='bg-gray-700 hover:bg-blue-500 p-2 border-2 rounded-full'><SiMongodb /></div>
-            </div>
-            <div className='w-[100%] flex gap-4 pt-4 text-center'>
-              <Link to="/" href="/" className='w-[100%] py-3 bg-blue-500 rounded-xl'>Documentation</Link>
-              <Link to="/" href="/" className='w-[100%] py-3 bg-gray-700 rounded-xl'>Visit Site</Link>
-            </div>
-          </div>
+          <ProjectCard projects={projects[2]} height1={"350px"} height2={"300px"} height3={"230px"} />
+          <ProjectCard projects={projects[3]} height1={"300px"} height2={"230px"} />
         </div>
+
         <br /> <br />
         <div className='text-center'>
-          <Link to="/" className='bg-gray-900 hover:bg-blue-500 py-4 px-12 rounded-md transition' >View more</Link>
+          <Link to="/projects" className='bg-gray-900 hover:bg-blue-500 py-4 px-12 rounded-md transition' >View more</Link>
         </div>
         
       </div>
      </div>
-     {/* <div className='h-[100vh] bg-cyan-700'></div> */}
 
     {/* //footer  */}
      <footer className='bg-black text-white'>

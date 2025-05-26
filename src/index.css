@@ -11,6 +11,26 @@
     box-sizing: border-box;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #3B81F6;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 body{
     /* font-family: "Roboto", sans-serif; */
      font-family: "Poppins", sans-serif;
@@ -18,7 +38,7 @@ body{
       overflow-x: hidden;
     }
     
-body button, body a {
+body button, body a, .nav svg {
     cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="%233B82F6" stroke="%233B82F6" stroke-width="2" stroke-linejoin="round" d="M10 11V8.99c0-.88.59-1.64 1.44-1.86h.05A1.99 1.99 0 0 1 14 9.05V12v-2c0-.88.6-1.65 1.46-1.87h.05A1.98 1.98 0 0 1 18 10.06V13v-1.94a2 2 0 0 1 1.51-1.94h0A2 2 0 0 1 22 11.06V14c0 .6-.08 1.27-.21 1.97a7.96 7.96 0 0 1-7.55 6.48 54.98 54.98 0 0 1-4.48 0 7.96 7.96 0 0 1-7.55-6.48C2.08 15.27 2 14.59 2 14v-1.49c0-1.11.9-2.01 2.01-2.01h0a2 2 0 0 1 2.01 2.03l-.01.97v-10c0-1.1.9-2 2-2h0a2 2 0 0 1 2 2V11Z"></path></svg>'), auto;
     /* caret-color: red; */
 }
@@ -28,7 +48,7 @@ body button, body a {
     height: 50px;
     background-color: #3b83f615;
     display: flex;
-    margin: 50px;
+    /* margin: 50px; */
     border-radius: 50%;
     box-shadow: 1px 5px 100px #3b83f6b2;
     animation: move 9.5s  infinite ease;
@@ -58,12 +78,12 @@ body button, body a {
 .m5{
     position: absolute;
     top: 0;
-    left: 90%;
+    left: 70%;
 }
 .m6{
     position: absolute;
     top: 60%;
-    left: 90%;
+    left: 60%;
 }
 
 @keyframes move {
@@ -71,7 +91,7 @@ body button, body a {
         transform: translate(0px,0px);
     }
     50%{
-        transform: translate(200%,100%);
+        /* transform: translate(200%,100%); */
     }
     100%{
         transform: translate(0px,0px);

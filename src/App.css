@@ -1,6 +1,6 @@
 
 @media only screen and (max-width:1024px) {
-    .navlinks{
+    .mobnavlinks{
         /* display: block;     */
         position: fixed;
         top: 80px;
@@ -9,20 +9,38 @@
         width: fit-content;
         height: 100vh;
     }
+
+    .navlinks{
+        /* display: none; */
+        position: absolute;
+    }
 }
 
 @media only screen and (max-width:768px) {
+
     .navlinks{
+        transform: translateY(-100%);
+        transition: .3s;
+    }
+    
+    .mobnavlinks{
         /* display: block;     */
         position: fixed;
-        top: 65px;
+        top: 80px;
         right: 0;
         /* left: 0px; */
         width: 100vw;
         height: 100vh;
+        transform: translateY(0%);
+        transition: .3s;
     }
-    .navlinks ul{
+    .mobnavlinks ul{
         line-height: 50px;
         text-align: center;
+    }
+    
+
+    .mobnavlinks button{
+        display: none;
     }
 }
