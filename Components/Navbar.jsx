@@ -26,10 +26,11 @@ const [menuStatus, setmenuStatus] = useState(window.innerWidth < 1024 ? true : f
           <Link to="/" className='hover:text-blue-500' >Home</Link>
           <Link to="/about" className='hover:text-blue-500' >About</Link>
           <Link to="/projects" className='hover:text-blue-500' >Projects</Link>
+          <Link to="https://github.com/Rohitkolii" className='hover:text-blue-500' >Github</Link>
         </ul>
       </div>
 
-      <button className='max-lg:hidden bg-blue-500 hover:bg-blue-600 py-3 px-12 font-semibold rounded-xl text-white transition'>Resume</button>
+      <Link to="/resume" className='max-lg:hidden bg-blue-500 hover:bg-blue-600 py-3 px-12 font-semibold rounded-xl text-white transition'>Resume</Link>
       
       <MdMenuOpen onClick={() => handleMenu()} className='text-[35px] text-white cursor-pointer lg:hidden' />
      </nav>

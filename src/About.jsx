@@ -14,12 +14,12 @@ const About = () => {
         <h4 className='text-[25px]'>{"A Fullstack Developer/>"}</h4>
       </div>
 
-      <div className='ma m1'></div>
+      {/* <div className='ma m1'></div>
       <div className='ma m2'></div>
       <div className='ma m3'></div>
       <div className='ma m4'></div>
       <div className='ma m5'></div>
-      <div className='ma m6'></div>
+      <div className='ma m6'></div> */}
      </header>
 
       <section className='bg-black text-gray-400'>

@@ -50,6 +50,21 @@ const Projects = () => {
     <>
         <Navbar />
 
+        <header className='w-[100%] bg-gray-950 text-gray-400 selection:text-blue-500 shadow-lg shadow-gray-100/50 overflow-x-hidden'>
+      
+      <div className='max-md:py-[250px] w-[90%] max-w-[1400px] m-auto text-center py-[300px]'>
+        <h4 style={{transition:".7s"}} className='max-sm:text-[35px] max-md:text-[50px] font-bold text-[70px]'>Projects</h4>
+        <h4 className='text-[25px]'>{"<That showcase my skills/>"}</h4>
+      </div>
+
+      {/* <div className='ma m1'></div>
+      <div className='ma m2'></div>
+      <div className='ma m3'></div>
+      <div className='ma m4'></div>
+      <div className='ma m5'></div>
+      <div className='ma m6'></div> */}
+     </header>
+
     <div className='bg-black pt-[100px]'>
       <div className='max-lg:w-[95%] w-[75%] max-w-[1400px] mx-auto text-white py-10'>
         <h4 className='text-2xl text-gray-400 font-semibold capitalize'>Projects that define my skills</h4>

@@ -108,12 +108,12 @@ function App() {
         <h4 className='text-[25px]'>{"A Fullstack Developer/>"}</h4>
       </div>
 
-      <div className='ma m1'></div>
+      {/* <div className='ma m1'></div>
       <div className='ma m2'></div>
       <div className='ma m3'></div>
       <div className='ma m4'></div>
       <div className='ma m5'></div>
-      <div className='ma m6'></div>
+      <div className='ma m6'></div> */}
      </header>
 
 
@@ -139,7 +139,7 @@ function App() {
      
      {/* Skills  */}
 
-    <section className='bg-black text-gray-500 py-20'>
+    <section id='skills' className='bg-black text-gray-500 py-20'>
         {/* <h3 className='text-4xl text-gray-600 font-bold capitalize'>Technologies i work on</h3> */}
         
       <div className='max-lg:grid-cols-[100%] max-lg:w-[95%] grid grid-cols-[60%_40%] gap-20 items-center w-[75%] max-w-[1400px] m-auto'>
