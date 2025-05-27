@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { MdMenuOpen } from 'react-icons/md'
 import { Link } from 'react-router-dom'
-
+// import "../src/App.css"
 
 const Navbar = () => {
 
@@ -10,16 +10,16 @@ const [menuStatus, setmenuStatus] = useState(window.innerWidth < 1024 ? true : f
   const handleMenu = () => {
     if(!menuStatus) {
       setmenuStatus(!menuStatus)
-      document.body.style.overflowY = 'scroll'
+      // document.body.style.overflowY = 'scroll'
     }else {
       setmenuStatus(!menuStatus)
-      document.body.style.overflowY = 'hidden'
+      // document.body.style.overflowY = 'hidden'
     }
   }
 
   return (
     <>
-    <nav id='nav' className='max-md:w-[100%] max-md:top-0 max-md:rounded-none max-md:py-5 max-[1250px]:w-[80%] first-line: bg-gray-900 px-6 py-3 flex justify-between items-center w-[50%] max-w-[1400px] m-auto rounded-2xl absolute left-[50%] top-[20px] translate-x-[-50%]'>
+    <nav id='nav' className='max-md:w-[100%] max-md:top-0 max-md:rounded-none max-md:py-5 max-[1250px]:w-[80%] bg-gray-900 px-6 py-3 flex justify-between items-center w-[50%] max-w-[1400px] m-auto rounded-2xl absolute left-[50%] top-[20px] translate-x-[-50%]'>
       <div className='text-blue-500 text-3xl font-extrabold'>RK</div>
 
       <div className={`text-red-500 ${!menuStatus ? "mobnavlinks" : "navlinks"}`}>
@@ -27,7 +27,6 @@ const [menuStatus, setmenuStatus] = useState(window.innerWidth < 1024 ? true : f
           <Link to="/" className='hover:text-blue-500' >Home</Link>
           <Link to="/about" className='hover:text-blue-500' >About</Link>
           <Link to="/projects" className='hover:text-blue-500' >Projects</Link>
-          {/* <Link to="/" className='hover:text-blue-500' >Skills</Link> */}
         </ul>
       </div>
 

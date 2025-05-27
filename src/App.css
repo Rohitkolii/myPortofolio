@@ -2,7 +2,7 @@
 @media only screen and (max-width:1024px) {
     .mobnavlinks{
         /* display: block;     */
-        position: fixed;
+        position: absolute;
         top: 80px;
         right: 0;
         /* left: 0px; */
@@ -11,7 +11,7 @@
     }
 
     .navlinks{
-        /* display: none; */
+        display: none;
         position: absolute;
     }
 }
