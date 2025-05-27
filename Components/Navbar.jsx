@@ -1,21 +1,20 @@
 import React, { useState } from 'react'
 import { MdMenuOpen } from 'react-icons/md'
 import { Link } from 'react-router-dom'
-// import "../src/App.css"
+import "../Styles/Navbar.css"
 
 const Navbar = () => {
 
 const [menuStatus, setmenuStatus] = useState(window.innerWidth < 1024 ? true : false)
 
   const handleMenu = () => {
-    if(!menuStatus) {
-      setmenuStatus(!menuStatus)
-      // document.body.style.overflowY = 'scroll'
-    }else {
-      setmenuStatus(!menuStatus)
-      // document.body.style.overflowY = 'hidden'
-    }
+    setmenuStatus(!menuStatus)
+    // if(menuStatus) {
+    //   document.body.style.overflowY = 'hidden'
+    // }
+    // document.body.style.overflowY = 'scroll'
   }
+
 
   return (
     <>

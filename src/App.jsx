@@ -1,5 +1,5 @@
-import { useState } from 'react'
 import './App.css'
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
 
 // icons 
@@ -21,6 +21,7 @@ import { FaLinkedin } from "react-icons/fa";
 import { MdCall, MdMenuOpen } from "react-icons/md";
 import Navbar from '../Components/Navbar';
 import ProjectCard from '../Components/ProjectCard';
+import Footer from '../Components/Footer';
 
 const skills = [
   "html",
@@ -94,37 +95,9 @@ function App() {
 
   document.body.classList = "selection:text-blue-500"
 
-  const [menuStatus, setmenuStatus] = useState(window.innerWidth < 1024 ? true : false)
-  
-  const handleMenu = () => {
-    if(!menuStatus) {
-      setmenuStatus(!menuStatus)
-      // document.body.style.overflowY = 'scroll'
-    }else {
-      setmenuStatus(!menuStatus)
-      // document.body.style.overflowY = 'hidden'
-    }
-    // document.body.style.overflowY = 'scroll'
-  }
-
   return (
     <>
-     <nav id='nav' className='max-md:w-[100%] max-md:top-0 max-md:rounded-none max-md:py-5 max-[1250px]:w-[80%] first-line: bg-gray-900 px-6 py-3 flex justify-between items-center w-[50%] max-w-[1400px] m-auto rounded-2xl absolute left-[50%] top-[20px] translate-x-[-50%]'>
-           <div className='text-blue-500 text-3xl font-extrabold'>RK</div>
-     
-           <div className={`text-red-500 ${!menuStatus ? "mobnavlinks" : "navlinks"}`}>
-             <ul className='max-md:py-10 max-lg:flex-col max-lg:bg-gray-900 max-lg:p-5 max-lg:gap-2 max-lg:rounded-lg flex gap-10 font-semibold text-gray-500'>
-               <Link to="/" className='hover:text-blue-500' >Home</Link>
-               <Link to="/about" className='hover:text-blue-500' >About</Link>
-               <Link to="/projects" className='hover:text-blue-500' >Projects</Link>
-               {/* <Link to="/" className='hover:text-blue-500' >Skills</Link> */}
-             </ul>
-           </div>
-     
-           <button className='max-lg:hidden bg-blue-500 hover:bg-blue-600 py-3 px-12 font-semibold rounded-xl text-white transition'>Resume</button>
-           
-           <MdMenuOpen onClick={() => handleMenu()} className='text-[35px] text-white cursor-pointer lg:hidden' />
-          </nav>
+     <Navbar />
 
      <header className='w-[100%] bg-gray-950 text-gray-400 selection:text-blue-500 shadow-lg shadow-gray-100/50 overflow-x-hidden'>
       
@@ -176,7 +149,7 @@ function App() {
           <div className='flex flex-wrap gap-x-2 gap-y-2 mt-5'>
             {
               skills.map((skill, i)=> {
-                return <p className='bg-gray-900 py-1 px-5 rounded-md'>{skill}</p>
+                return <p key={i} className='bg-gray-900 py-1 px-5 rounded-md'>{skill}</p>
               })
             }
           </div>
@@ -188,8 +161,6 @@ function App() {
           </div>
       </div>
     </section>
-
-     
 
      {/* Projects  */}
 
@@ -215,53 +186,7 @@ function App() {
       </div>
      </div>
 
-    {/* //footer  */}
-     <footer className='bg-black text-white'>
-      <div className='max-lg:w-[95%] max-lg:px-0 max-md:flex-col w-[80%] max-w-[1400px] m-auto p-20 border-t border-gray-800 flex justify-between'>
-        <div>
-          <p className='text-blue-500 font-bold text-4xl'>RK<span className='text-white'>.</span></p>
-          <p className='text-gray-700 text-sm'>Lorem ipsum dolor sit amet consectetur <br /> adipisicing elit. Blanditiis, perspiciatis.</p>
-          <div className='flex gap-3 my-3'>
-            <div className='bg-gray-700 hover:bg-blue-500 p-2 border-2 rounded-full'><FaLinkedin /></div>
-            <div className='bg-gray-700 hover:bg-blue-500 p-2 border-2 rounded-full'><FaGithub /></div>
-            <div className='bg-gray-700 hover:bg-blue-500 p-2 border-2 rounded-full'><FaInstagram /></div>
-            <div className='bg-gray-700 hover:bg-blue-500 p-2 border-2 rounded-full'><IoIosMail /></div>
-            <div className='bg-gray-700 hover:bg-blue-500 p-2 border-2 rounded-full'><FaXTwitter /></div>
-          </div>
-        </div>
-
-        <div>
-          <p>Usefull links</p>
-          <ul className='text-gray-500 text-sm/6 mt-3'>
-            <li><Link to="/" href="/">About</Link></li>
-            <li><Link to="/" href="/">Projects</Link></li>
-            <li><Link to="/" href="/">Blogs</Link></li>
-            <li><Link to="/" href="/">Contact</Link></li>
-          </ul>
-        </div>
-
-        <div>
-          <p>More</p>
-          <ul className='text-gray-500 text-sm/6 mt-3'>
-            <li><Link to="/" href="/">Resume</Link></li>
-            <li><Link to="/" href="/">Facts</Link></li>
-          </ul>
-        </div>
-
-        <div>
-          <p>Contact</p>
-          <ul className='text-gray-500 text-sm/7 mt-3'>
-            <li><Link to="/" className='flex items-center gap-2' href="/"><IoIosMail className='text-xl' />Rohitkolisd@gmail.com</Link></li>
-            <li><Link to="/" className='flex items-center gap-2' href="/"><MdCall className='text-xl' />+91 9582207407</Link></li>
-            <li><Link to="/" className='flex items-center gap-2' href="/"><FaLinkedin className='text-xl' />/rohit-koli1</Link></li>
-          </ul>
-        </div>
-      </div>
-
-      <div className='py-10 w-[80%] max-w-[1400px] m-auto border-t border-gray-900'>
-        <p className='flex justify-center items-center'>Made with <FaHeart className='mx-1 text-red-600'/> by Rohit</p>
-      </div>
-     </footer>
+    <Footer />
     </>
   )
 }
