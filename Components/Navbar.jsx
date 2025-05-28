@@ -18,7 +18,7 @@ const [menuStatus, setmenuStatus] = useState(window.innerWidth < 1024 ? true : f
 
   return (
     <>
-    <nav id='nav' className='max-md:w-[100%] max-md:top-0 max-md:rounded-none max-md:py-5 max-[1250px]:w-[80%] bg-gray-900 px-6 py-3 flex justify-between items-center w-[50%] max-w-[1400px] m-auto rounded-2xl absolute left-[50%] top-[20px] translate-x-[-50%]'>
+    <nav id='nav' className='max-md:w-[90%] w-[60%] bg-gray-900 px-6 py-3 flex justify-between items-center max-w-[1400px] m-auto rounded-2xl absolute left-[50%] top-[20px] translate-x-[-50%]'>
       <div className='text-blue-500 text-3xl font-extrabold'>RK</div>
 
       <div className={`text-red-500 ${!menuStatus ? "mobnavlinks" : "navlinks"}`}>

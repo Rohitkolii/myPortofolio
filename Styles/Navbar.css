@@ -19,6 +19,7 @@
         left: 0;
         right: 0;
         top: 80px;
+        width: 100%;
         transform: translateY(0%);
         transition: .3s;
         height: 100vh;
@@ -30,6 +31,6 @@
 
 @media only screen and (max-width: 768px) {
     .mobnavlinks ul{
-    height: 100vh;
+    /* height: 100vh; */
     }
 }

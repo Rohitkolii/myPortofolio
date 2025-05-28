@@ -99,21 +99,21 @@ function App() {
     <>
      <Navbar />
 
-     <header className='w-[100%] bg-gray-950 text-gray-400 selection:text-blue-500 shadow-lg shadow-gray-100/50 overflow-x-hidden'>
+     <header className='w-[100%] bg-gray-950 text-gray-400 selection:text-blue-500 overflow-x-hidden'>
       
-      <div className='max-md:py-[250px] w-[90%] max-w-[1400px] m-auto text-center py-[300px]'>
+      <div className='w-[90%] max-w-[1400px] m-auto text-center py-[300px]'>
         <p className='text-2xl italic'>Hello there!</p>
         {/* <h4 style={{fontSize:(70+fontsize), transition:".7s"}} className='font-bold'>I'm Rohit koli</h4> */}
         <h4 style={{transition:".7s"}} className='max-sm:text-[35px] max-md:text-[50px] font-bold text-[70px]'>I'm Rohit koli</h4>
-        <h4 className='text-[25px]'>{"A Fullstack Developer/>"}</h4>
+        <h4 className='text-[25px]'>{"<A Fullstack Developer/>"}</h4>
       </div>
 
-      {/* <div className='ma m1'></div>
+      <div className='ma m1'></div>
       <div className='ma m2'></div>
       <div className='ma m3'></div>
       <div className='ma m4'></div>
       <div className='ma m5'></div>
-      <div className='ma m6'></div> */}
+      <div className='ma m6'></div>
      </header>
 
 
