@@ -15,28 +15,28 @@ const Footer = () => {
           <p className='text-blue-500 font-bold text-4xl'>RK<span className='text-white'>.</span></p>
           <p className='text-gray-700 text-sm'>Lorem ipsum dolor sit amet consectetur <br /> adipisicing elit. Blanditiis, perspiciatis.</p>
           <div className='flex gap-3 my-3'>
-            <div className='bg-gray-700 hover:bg-blue-500 p-2 border-2 rounded-full'><FaLinkedin /></div>
-            <div className='bg-gray-700 hover:bg-blue-500 p-2 border-2 rounded-full'><FaGithub /></div>
-            <div className='bg-gray-700 hover:bg-blue-500 p-2 border-2 rounded-full'><FaInstagram /></div>
-            <div className='bg-gray-700 hover:bg-blue-500 p-2 border-2 rounded-full'><IoIosMail /></div>
-            <div className='bg-gray-700 hover:bg-blue-500 p-2 border-2 rounded-full'><FaXTwitter /></div>
+            <Link to="https://www.linkedin.com/in/rohit-koli1/" className='bg-gray-700 hover:bg-blue-500 p-2 border-2 rounded-full'><FaLinkedin /></Link>
+            <Link to="https://github.com/Rohitkolii" className='bg-gray-700 hover:bg-blue-500 p-2 border-2 rounded-full'><FaGithub /></Link>
+            <Link to="https://www.instagram.com/rohitkolii_/" className='bg-gray-700 hover:bg-blue-500 p-2 border-2 rounded-full'><FaInstagram /></Link>
+            <Link to="mailto:rohitsd@gmail.com" className='bg-gray-700 hover:bg-blue-500 p-2 border-2 rounded-full'><IoIosMail /></Link>
+            {/* <Link to="" className='bg-gray-700 hover:bg-blue-500 p-2 border-2 rounded-full'><FaXTwitter /></Link> */}
           </div>
         </div>
 
         <div>
           <p>Usefull links</p>
           <ul className='text-gray-500 text-sm/6 mt-3'>
-            <li><Link to="/" href="/">About</Link></li>
-            <li><Link to="/" href="/">Projects</Link></li>
-            <li><Link to="/" href="/">Blogs</Link></li>
-            <li><Link to="/" href="/">Contact</Link></li>
+            <li><Link to="/about" >About</Link></li>
+            <li><Link to="/projects" >Projects</Link></li>
+            <li><Link to="/blogs" >Blogs</Link></li>
+            <li><Link to="/contact" >Contact</Link></li>
           </ul>
         </div>
 
         <div>
           <p>More</p>
           <ul className='text-gray-500 text-sm/6 mt-3'>
-            <li><Link to="/" href="/">Resume</Link></li>
+            <li><Link to="/resume" href="/">Resume</Link></li>
             <li><Link to="/" href="/">Facts</Link></li>
           </ul>
         </div>
@@ -44,9 +44,9 @@ const Footer = () => {
         <div>
           <p>Contact</p>
           <ul className='text-gray-500 text-sm/7 mt-3'>
-            <li><Link to="/" className='flex items-center gap-2' href="/"><IoIosMail className='text-xl' />Rohitkolisd@gmail.com</Link></li>
-            <li><Link to="/" className='flex items-center gap-2' href="/"><MdCall className='text-xl' />+91 9582207407</Link></li>
-            <li><Link to="/" className='flex items-center gap-2' href="/"><FaLinkedin className='text-xl' />/rohit-koli1</Link></li>
+            <li><Link to="mailto:rohitkolisd@gmail.com" className='flex items-center gap-2' href="/"><IoIosMail className='text-xl' />Rohitkolisd@gmail.com</Link></li>
+            <li><Link to="tel:9582207407" className='flex items-center gap-2' href="/"><MdCall className='text-xl' />+91 9582207407</Link></li>
+            <li><Link to="https://www.linkedin.com/in/rohit-koli1/" className='flex items-center gap-2' href="/"><FaLinkedin className='text-xl' />/rohit-koli1</Link></li>
           </ul>
         </div>
       </div>

@@ -19,7 +19,7 @@ const ProjectCard = ({height1, height2, height3, projects}) => {
             
         </div>
         <div className='max-lg:gap-2 w-[100%] flex gap-5 text-center'>
-            <Link to={projects.link1} className='w-[100%] py-3 bg-blue-500 rounded-xl'>Documentation</Link>
+            <Link to={`/projects/${projects.id}`} className='w-[100%] py-3 bg-blue-500 rounded-xl'>Documentation</Link>
             <Link to={projects.link2} className='w-[100%] py-3 bg-gray-700 rounded-xl'>Visit Site</Link>
         </div>
     </div>

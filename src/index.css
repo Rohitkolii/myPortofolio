@@ -102,3 +102,14 @@ body button, body a, .nav svg {
         transform: translate(0px,0px);
     }
 }
+
+li{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    line-height: 30px;
+}
+
+li svg{
+    color: #3B81F6;
+}

@@ -60,31 +60,31 @@ const projects = [
     intro : "A conceptual project focused on creating a Software Requirements Specification for a car rental web platform. The aim is to define features like vehicle booking, user registration, pricing, and admin management.",
     skils : [<FaReact />, <SiVite/>, <FaCss3/>, <FaNodeJs/>, <SiExpress/>, <SiMongodb/>],
     img : "images/projects/1.png",
-    link1 : "",
+    id : "rentwheels",
     link2 : "https://rentwheelss.vercel.app/"
-  },
-  {
-    title : "Shopingo – E-commerce Web App",
-    intro : "A modern, dynamic e-commerce website built with React.js. Features include product listings via third-party APIs, user login/logout, cart functionality using React Context API, and responsive design for a smooth shopping experience.",
-    skils : [<FaReact />, <SiVite/>, <FaCss3/>, <FaNodeJs/>, <SiExpress/>, <SiMongodb/>],
-    img : "images/projects/2.png",
-    link1 : "",
-    link2 : "https://shopingo.vercel.app/"
   },
   {
     title : "Appsobytes – Business Portfolio Website",
     intro : "A professional business website showcasing software development services. Highlights the brand, services offered, and contact options for clients.",
     skils : [<FaReact />, <SiVite/>, <FaCss3/>, <FaNodeJs/>, <SiExpress/>, <SiMongodb/>],
     img : "images/projects/3.png",
-    link1 : "",
+    id : "appsobytes",
     link2 : "https://appsobytes.com/"
+  },
+  {
+    title : "Shopingo – E-commerce Web App",
+    intro : "A modern, dynamic e-commerce website built with React.js. Features include product listings via third-party APIs, user login/logout, cart functionality using React Context API, and responsive design for a smooth shopping experience.",
+    skils : [<FaReact />, <SiVite/>, <FaCss3/>, <FaNodeJs/>, <SiExpress/>, <SiMongodb/>],
+    img : "images/projects/2.png",
+    id : "shopingo",
+    link2 : "https://shopingo.vercel.app/"
   },
   {
     title : "Foodo – Food Delivery App UI",
     intro : "A responsive and interactive food delivery website UI, designed with React. Includes homepage, food categories, search bar, and a sleek, modern design.",
     skils : [<FaReact />, <SiVite/>, <FaCss3/>, <FaNodeJs/>, <SiExpress/>, <SiMongodb/>],
     img : "images/projects/4.png",
-    link1 : "",
+    id : "foodo",
     link2 : "https://myfoodo.vercel.app/"
   },
 ]
@@ -93,7 +93,7 @@ const projects = [
 
 function App() {
 
-  document.body.classList = "selection:text-blue-500"
+  // document.body.classList = "selection:text-blue-500"
 
   return (
     <>
@@ -120,9 +120,9 @@ function App() {
      {/* //About Me */}
 
      <section className='bg-black text-gray-400'>
-      <div className='max-lg:grid-cols-[100%] max-lg:w-[95%] grid grid-cols-[40%_60%] gap-[100px] w-[75%] max-w-[1400px] m-auto py-20 items-center'>
+      <div className='max-lg:grid-cols-[100%] max-lg:w-[95%] grid grid-cols-[30%_70%] gap-[100px] w-[75%] max-w-[1400px] m-auto py-20 items-center'>
         <div>
-          <img className='max-lg:w-[60%] max-lg:m-auto max-md:w-[90%] rounded-b-[35%]' src="images/user.svg" alt="" />
+          <img className='max-lg:w-[60%] max-lg:m-auto max-md:w-[90%] rounded-b-[35%]' src="images/me2.svg" alt="" />
         </div>
         <div>
           <h4 className='text-4xl font-bold capitalize'>hey, it's about me</h4>

@@ -25,7 +25,7 @@ const About = () => {
       <section className='bg-black text-gray-400'>
       <div className='max-lg:grid-cols-[100%] max-lg:w-[95%] grid grid-cols-[40%_60%] gap-[100px] w-[75%] max-w-[1400px] m-auto py-20 items-center'>
         <div>
-          <img className='max-lg:w-[60%] max-lg:m-auto max-md:w-[90%] rounded-b-[35%]' src="images/user.svg" alt="" />
+          <img className='max-lg:w-[60%] max-lg:m-auto max-md:w-[90%] rounded-b-[35%]' src="images/me2.svg" alt="" />
         </div>
         <div>
           <h4 className='text-4xl font-bold capitalize'>hey, it's about me</h4>
