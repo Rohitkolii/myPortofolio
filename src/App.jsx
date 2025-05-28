@@ -116,10 +116,7 @@ function App() {
      {/* //About Me */}
 
      <section className='bg-black text-gray-400'>
-      <div className='max-lg:grid-cols-[100%] max-lg:w-[95%] grid grid-cols-[30%_70%] md:gap-[10px] gap-10 w-[75%] max-w-[1400px] m-auto lg:py-20 pt-20 items-center'>
-        <div>
-          <img className='max-lg:w-[60%] max-lg:m-auto max-md:w-[100%] rounded-md' src="images/cut.jpeg" alt="" />
-        </div>
+      <div className='max-lg:w-[95%] w-[75%] max-w-[1400px] m-auto lg:py-20 pt-20'>
         <div>
           <h4 className='text-4xl font-bold capitalize'>hey, it's about me</h4>
           <h5 className='font-semibold text-xl'>Frontend Developer | Web Enthusiast | UI/UX Explorer</h5>
