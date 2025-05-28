@@ -16,6 +16,7 @@ import { FaCss3 } from "react-icons/fa";
 import { FaNodeJs } from "react-icons/fa6";
 import { SiExpress } from "react-icons/si";
 import { SiMongodb } from "react-icons/si";
+import Error from './Error.jsx';
 
 const projectPageData = [
   {
@@ -133,7 +134,7 @@ createRoot(document.getElementById('root')).render(
         <Route path="/about" element={<About />} />
         <Route path="/resume" element={<Resume />} />
         <Route path="/projects/:id" element={<ProjectDocumentation projectdata={projectPageData} />} />
-        {/* <Route path="*" element={<NotFound />} /> */}
+        <Route path="*" element={<Error />} />
       </Routes>
     </BrowserRouter>
   </StrictMode>,
