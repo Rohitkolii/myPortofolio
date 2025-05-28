@@ -1,5 +1,5 @@
 import './App.css'
-import { useState } from 'react'
+
 import { Link } from 'react-router-dom'
 
 // icons 
@@ -9,33 +9,26 @@ import { FaCss3 } from "react-icons/fa";
 import { FaNodeJs } from "react-icons/fa6";
 import { SiExpress } from "react-icons/si";
 import { SiMongodb } from "react-icons/si";
-import { FaHeart } from "react-icons/fa";
 
 // footer icon 
-
-import { FaInstagram } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
-import { IoIosMail } from "react-icons/io";
-import { FaLinkedin } from "react-icons/fa";
-import { MdCall, MdMenuOpen } from "react-icons/md";
 import Navbar from '../Components/Navbar';
 import ProjectCard from '../Components/ProjectCard';
 import Footer from '../Components/Footer';
+import { useEffect, useState } from 'react';
 
-const skills = [
-  "html",
-  "css",
-  "javascript",
-  "React",
-  "Next",
-  "Redux",
-  "Tailwind",
-  "Nodejs",
-  "Expressjs",
-  "MongoDB",
-  "SQL",
-]
+// const skills = [
+//   "html",
+//   "css",
+//   "javascript",
+//   "React",
+//   "Next",
+//   "Redux",
+//   "Tailwind",
+//   "Nodejs",
+//   "Expressjs",
+//   "MongoDB",
+//   "SQL",
+// ]
 
 const briefSkill = {
   "HTML": "I have a strong understanding of HTML5 and its semantic elements. I use HTML to structure web content effectively, ensuring accessibility and clean markup for web pages.",
@@ -90,10 +83,13 @@ const projects = [
 ]
 
 
-
 function App() {
 
-  // document.body.classList = "selection:text-blue-500"
+  const [skillValue, setskillValue] = useState(Object.keys(briefSkill)[0])
+  const handleSkill = (skill) => {
+    const value = Object.keys(briefSkill).filter((v)=> v == skill)
+    setskillValue(value)
+  }
 
   return (
     <>
@@ -120,9 +116,9 @@ function App() {
      {/* //About Me */}
 
      <section className='bg-black text-gray-400'>
-      <div className='max-lg:grid-cols-[100%] max-lg:w-[95%] grid grid-cols-[30%_70%] gap-[100px] w-[75%] max-w-[1400px] m-auto py-20 items-center'>
+      <div className='max-lg:grid-cols-[100%] max-lg:w-[95%] grid grid-cols-[30%_70%] md:gap-[10px] gap-10 w-[75%] max-w-[1400px] m-auto lg:py-20 pt-20 items-center'>
         <div>
-          <img className='max-lg:w-[60%] max-lg:m-auto max-md:w-[90%] rounded-b-[35%]' src="images/me2.svg" alt="" />
+          <img className='max-lg:w-[60%] max-lg:m-auto max-md:w-[100%] rounded-md' src="images/cut.jpeg" alt="" />
         </div>
         <div>
           <h4 className='text-4xl font-bold capitalize'>hey, it's about me</h4>
@@ -148,16 +144,16 @@ function App() {
           <p>As a fresher in web development, I’ve worked with HTML, CSS, JavaScript, React, Next.js, Redux, and Tailwind on the frontend. I also have basic experience with Node.js, Express.js, MongoDB, APIs, JSON, and Postman for backend and API testing. I'm eager to keep learning and building real-world projects.</p>
           <div className='flex flex-wrap gap-x-2 gap-y-2 mt-5'>
             {
-              skills.map((skill, i)=> {
-                return <p key={i} className='bg-gray-900 py-1 px-5 rounded-md'>{skill}</p>
+              Object.keys(briefSkill).map((skill, i)=> {
+                return <p onClick={()=> handleSkill(skill)} key={i} className='bg-gray-900 py-1 px-5 rounded-md hover:bg-blue-500 hover:text-white cursor-pointer transition-all'>{skill}</p>
               })
             }
           </div>
         </div>
 
-        <div className='bg-gray-900 h-[100%] p-10 rounded-xl'>
-          <p>CSS</p>
-          <p>As a fresher, I have a good understanding of CSS and use it to style and layout web pages effectively. I’m familiar with Flexbox, Grid, and media queries for responsive design. I enjoy experimenting with animations and improving my skills through hands-on projects.</p>
+        <div className='bg-gray-900 h-fit p-10 rounded-xl'>
+          <p className='text-gray-300 font-semibold'>{skillValue && skillValue}</p>
+          <p>{skillValue && briefSkill[skillValue]}</p>
           </div>
       </div>
     </section>
