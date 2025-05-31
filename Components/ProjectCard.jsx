@@ -7,7 +7,7 @@ const ProjectCard = ({height1, height2, height3, projects}) => {
         <img
         src={projects.img}
         alt={projects.title}
-        className={`w-full h-[${height1}] rounded-xl max-md:h-[${height2}] ${height3 ? `max-md:h-[${height3}]` : ''}`}
+        className={`w-[100%] h-[${height1}] rounded-xl max-md:h-[${height2}] ${height3 ? `max-md:h-[${height3}]` : ''}`}
   />
         <p className='text-2xl font-semibold mt-3'>{projects.title}</p>
         <p className='text-gray-500 text-[15px]'>{projects.intro.slice(0,120)}...</p>
