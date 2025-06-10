@@ -3,11 +3,16 @@ import Navbar from '../Components/Navbar'
 import ProjectCard from '../Components/ProjectCard'
 
 import { FaReact } from "react-icons/fa";
+import { RiNextjsFill } from "react-icons/ri";
 import { SiVite } from "react-icons/si";
 import { FaCss3 } from "react-icons/fa";
 import { FaNodeJs } from "react-icons/fa6";
 import { SiExpress } from "react-icons/si";
 import { SiMongodb } from "react-icons/si";
+import { FaHtml5 } from "react-icons/fa";
+import { FaJsSquare } from "react-icons/fa";
+
+
 import Footer from '../Components/Footer';
 
 
@@ -15,7 +20,7 @@ const projects = [
   {
     title : "Rentwheels – Vehicle Rentle webapp",
     intro : "A conceptual project focused on creating a Software Requirements Specification for a car rental web platform. The aim is to define features like vehicle booking, user registration, pricing, and admin management.",
-    skils : [<FaReact />, <SiVite/>, <FaCss3/>, <FaNodeJs/>, <SiExpress/>, <SiMongodb/>],
+    skils : [<FaReact />, <SiVite/>,<FaHtml5 />, <FaCss3/>, <FaNodeJs/>, <SiExpress/>, <SiMongodb/>],
     img : "images/projects/1.png",
     id : "rentwheels",
     link2 : "https://rentwheelss.vercel.app/"
@@ -23,7 +28,7 @@ const projects = [
   {
     title : "Appsobytes – Business Portfolio Website",
     intro : "A professional business website showcasing software development services. Highlights the brand, services offered, and contact options for clients.",
-    skils : [<FaReact />, <SiVite/>, <FaCss3/>, <FaNodeJs/>, <SiExpress/>, <SiMongodb/>],
+    skils : [<FaReact />,<RiNextjsFill />, <FaHtml5 />, <FaCss3/>],
     img : "images/projects/3.png",
     id : "appsobytes",
     link2 : "https://appsobytes.com/"
@@ -31,7 +36,7 @@ const projects = [
   {
     title : "Deansight - IELTS Landing Page For Client",
     intro : "Developed a responsive and user-friendly landing page for an IELTS prep platform. Focused on clear content structure, modern design, and smooth user experience to boost engagement and conversions.",
-    skils : [<FaReact />, <SiVite/>, <FaCss3/>, <FaNodeJs/>, <SiExpress/>, <SiMongodb/>],
+    skils : [<FaHtml5 />, <FaCss3/>, <FaJsSquare />],
     img : "images/projects/5.png",
     id : "deansight",
     link2 : "https://deansight.com/"
@@ -39,7 +44,7 @@ const projects = [
   {
     title : "Shopingo – E-commerce Web App",
     intro : "A modern, dynamic e-commerce website built with React.js. Features include product listings via third-party APIs, user login/logout, cart functionality using React Context API, and responsive design for a smooth shopping experience.",
-    skils : [<FaReact />, <SiVite/>, <FaCss3/>, <FaNodeJs/>, <SiExpress/>, <SiMongodb/>],
+    skils : [<FaReact />, <FaHtml5 />, <FaCss3/>, <FaNodeJs/>, <SiExpress/>, <SiMongodb/>],
     img : "images/projects/2.png",
     id : "shopingo",
     link2 : "https://shopingo.vercel.app/"
@@ -47,7 +52,7 @@ const projects = [
   {
     title : "Foodo – Food Delivery App UI",
     intro : "A responsive and interactive food delivery website UI, designed with React. Includes homepage, food categories, search bar, and a sleek, modern design.",
-    skils : [<FaReact />, <SiVite/>, <FaCss3/>, <FaNodeJs/>, <SiExpress/>, <SiMongodb/>],
+    skils : [<RiNextjsFill />, <FaCss3/>, <FaNodeJs/>, <SiExpress/>, <SiMongodb/>],
     img : "images/projects/4.png",
     id : "foodo",
     link2 : "https://myfoodo.vercel.app/"
@@ -55,7 +60,7 @@ const projects = [
   {
     title : "Edusphere – Learning Platform",
     intro : "Built a sleek and responsive website for Edusphere, focusing on intuitive navigation, course showcase, and engaging user experience to support seamless online learning.",
-    skils : [<FaReact />, <SiVite/>, <FaCss3/>, <FaNodeJs/>, <SiExpress/>, <SiMongodb/>],
+    skils : [<RiNextjsFill />, <FaHtml5/>, <FaCss3/>, <FaNodeJs/>, <SiExpress/>, <SiMongodb/>],
     img : "images/projects/6.png",
     id : "edusphere",
     link2 : "https://eduspheres.vercel.app/"

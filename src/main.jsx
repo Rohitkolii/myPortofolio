@@ -10,20 +10,21 @@ import Resume from './Resume.jsx';
 import ProjectDocumentation from './ProjectDocumentation.jsx';
 
 // icons 
-import { FaReact } from "react-icons/fa";
+import { FaHtml5, FaJsSquare, FaReact } from "react-icons/fa";
 import { SiVite } from "react-icons/si";
 import { FaCss3 } from "react-icons/fa";
 import { FaNodeJs } from "react-icons/fa6";
 import { SiExpress } from "react-icons/si";
 import { SiMongodb } from "react-icons/si";
 import Error from './Error.jsx';
+import { RiNextjsFill } from 'react-icons/ri';
 
 const projectPageData = [
   {
     id : 'rentwheels',
     title : "Rentwheels - Vehicle Rentle webapp",
     intro : "RentWheels is a dynamic web application designed to simplify car rentals through a smooth and intuitive user experience. I developed this project to practice full-stack development and improve my UI/UX skills. The platform allows users to browse available vehicles, view details, and make bookings with ease.",
-    tech : [<FaReact />, <SiVite/>, <FaCss3/>, <FaNodeJs/>, <SiExpress/>, <SiMongodb/>],
+    tech : [<FaReact />, <SiVite/>,<FaHtml5 />, <FaCss3/>, <FaNodeJs/>, <SiExpress/>, <SiMongodb/>],
     img : "/images/projects/1.png",
     features : 
               ["Responsive Design: Works across all devices with a mobile-first approach",
@@ -40,7 +41,7 @@ const projectPageData = [
     id : 'shopingo',
     title : "Shopingo – E-commerce Web App",
     intro : "A modern, dynamic e-commerce website built with React.js. Features include product listings via third-party APIs, user login/logout, cart functionality using React Context API, and responsive design for a smooth shopping experience.",
-    tech : [<FaReact />, <SiVite/>, <FaCss3/>, <FaNodeJs/>, <SiExpress/>, <SiMongodb/>],
+    tech : [<FaReact />, <FaHtml5 />, <FaCss3/>, <FaNodeJs/>, <SiExpress/>, <SiMongodb/>],
     img : "/images/projects/2.png",
     features : 
               ["Responsive Design: Works across all devices with a mobile-first approach",
@@ -57,7 +58,7 @@ const projectPageData = [
     id : "appsobytes",
    title : "Appsobytes – Business Portfolio Website",
        intro : "Appsobytes is a professional business website developed for an Client to promote software development services. It functions as a digital identity for a tech service provider, highlighting offerings, showcasing expertise, and enabling client interaction through a clean and responsive interface.",
-       tech : [<FaReact />, <SiVite/>, <FaCss3/>, <FaNodeJs/>, <SiExpress/>, <SiMongodb/>],
+       tech : [<FaReact />,<RiNextjsFill />, <FaHtml5 />, <FaCss3/>],
        img : "/images/projects/3.png",
        features : 
               [  "Modern UI: Clean and minimal design to highlight services and professionalism",
@@ -74,7 +75,7 @@ const projectPageData = [
   {
     title : "Deansight - IELTS Landing Page For Client",
         intro : "DeanSight is a clean, responsive landing page built using pure HTML, CSS, and JavaScript for an Client. Designed for a modern brand or service, it focuses on delivering a smooth, focused user experience with a functional contact form that enables user interaction without any frameworks.",
-        tech : [<FaReact />, <SiVite/>, <FaCss3/>, <FaNodeJs/>, <SiExpress/>, <SiMongodb/>],
+        tech : [<FaHtml5 />, <FaCss3/>, <FaJsSquare />],
         img : "/images/projects/5.png",
         id : "deansight",
         features : 
@@ -91,7 +92,7 @@ const projectPageData = [
   {
     title : "Foodo – Food Delivery App UI",
         intro : "Foodo is a fully responsive and dynamic food delivery web application built with Next.js. It offers a seamless user experience for browsing food items, managing a cart, and placing orders. The application demonstrates real-world functionality such as state management with Redux, data fetching with Axios, and a clean, modern UI with reusable components.",
-        tech : [<FaReact />, <SiVite/>, <FaCss3/>, <FaNodeJs/>, <SiExpress/>, <SiMongodb/>],
+        tech : [<RiNextjsFill />, <FaCss3/>, <FaNodeJs/>, <SiExpress/>, <SiMongodb/>],
         img : "/images/projects/4.png",
         id : "foodo",
         features : 
@@ -109,7 +110,7 @@ const projectPageData = [
   {
     title : "Edusphere – Learning Platform",
         intro : "Edusphere is an intelligent, web-based platform currently in development, designed to help students and professionals discover the right career paths using AI-powered insights. This project aims to bridge the gap between education and real-world careers by offering personalized recommendations based on user interests, skills, and academic background.",
-        tech : [<FaReact />, <SiVite/>, <FaCss3/>, <FaNodeJs/>, <SiExpress/>, <SiMongodb/>],
+        tech : [<RiNextjsFill />, <FaHtml5/>, <FaCss3/>, <FaNodeJs/>, <SiExpress/>, <SiMongodb/>],
         img : "/images/projects/6.png",
         id : "edusphere",
         features : 

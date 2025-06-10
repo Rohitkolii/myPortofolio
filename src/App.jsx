@@ -3,7 +3,7 @@ import './App.css'
 import { Link } from 'react-router-dom'
 
 // icons 
-import { FaReact } from "react-icons/fa";
+import { FaHtml5, FaReact } from "react-icons/fa";
 import { SiVite } from "react-icons/si";
 import { FaCss3 } from "react-icons/fa";
 import { FaNodeJs } from "react-icons/fa6";
@@ -15,6 +15,7 @@ import Navbar from '../Components/Navbar';
 import ProjectCard from '../Components/ProjectCard';
 import Footer from '../Components/Footer';
 import { useEffect, useState } from 'react';
+import { RiNextjsFill } from 'react-icons/ri';
 
 // const skills = [
 //   "html",
@@ -51,7 +52,7 @@ const projects = [
   {
     title : "Rentwheels – Vehicle Rentle webapp",
     intro : "A conceptual project focused on creating a Software Requirements Specification for a car rental web platform. The aim is to define features like vehicle booking, user registration, pricing, and admin management.",
-    skils : [<FaReact />, <SiVite/>, <FaCss3/>, <FaNodeJs/>, <SiExpress/>, <SiMongodb/>],
+    skils : [<FaReact />, <SiVite/>,<FaHtml5 />, <FaCss3/>, <FaNodeJs/>, <SiExpress/>, <SiMongodb/>],
     img : "images/projects/1.png",
     id : "rentwheels",
     link2 : "https://rentwheelss.vercel.app/"
@@ -59,7 +60,7 @@ const projects = [
   {
     title : "Appsobytes – Business Portfolio Website",
     intro : "A professional business website showcasing software development services. Highlights the brand, services offered, and contact options for clients.",
-    skils : [<FaReact />, <SiVite/>, <FaCss3/>, <FaNodeJs/>, <SiExpress/>, <SiMongodb/>],
+    skils : [<FaReact />,<RiNextjsFill />, <FaHtml5 />, <FaCss3/>],
     img : "images/projects/3.png",
     id : "appsobytes",
     link2 : "https://appsobytes.com/"
@@ -67,7 +68,7 @@ const projects = [
   {
     title : "Shopingo – E-commerce Web App",
     intro : "A modern, dynamic e-commerce website built with React.js. Features include product listings via third-party APIs, user login/logout, cart functionality using React Context API, and responsive design for a smooth shopping experience.",
-    skils : [<FaReact />, <SiVite/>, <FaCss3/>, <FaNodeJs/>, <SiExpress/>, <SiMongodb/>],
+    skils : [<FaReact />, <FaHtml5 />, <FaCss3/>, <FaNodeJs/>, <SiExpress/>, <SiMongodb/>],
     img : "images/projects/2.png",
     id : "shopingo",
     link2 : "https://shopingo.vercel.app/"
@@ -75,7 +76,7 @@ const projects = [
   {
     title : "Foodo – Food Delivery App UI",
     intro : "A responsive and interactive food delivery website UI, designed with React. Includes homepage, food categories, search bar, and a sleek, modern design.",
-    skils : [<FaReact />, <SiVite/>, <FaCss3/>, <FaNodeJs/>, <SiExpress/>, <SiMongodb/>],
+    skils : [<RiNextjsFill />, <FaCss3/>, <FaNodeJs/>, <SiExpress/>, <SiMongodb/>],
     img : "images/projects/4.png",
     id : "foodo",
     link2 : "https://myfoodo.vercel.app/"
