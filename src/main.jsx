@@ -38,9 +38,9 @@ const projectPageData = [
     conclusion : "RentWheels is more than just a practice project—it's a showcase of my ability to turn real-world requirements into a fully functional product. It highlights my proficiency in frontend development, responsive design, and cloud integration, all of which are essential for building modern web applications."
   },
   {
-    id : 'shopingo',
-    title : "Shopingo – E-commerce Web App",
-    intro : "A modern, dynamic e-commerce website built with React.js. Features include product listings via third-party APIs, user login/logout, cart functionality using React Context API, and responsive design for a smooth shopping experience.",
+    id : 'clothiqs',
+    title : "Clothiqs – A clothing Web Application",
+    intro : "Clothiqs is a sleek and responsive clothing web app that offers a smooth shopping experience. Users can browse fashion collections, view product details, and shop with ease. Built to showcase modern UI and e-commerce functionality, it's a highlight of my frontend development skills.",
     tech : [<FaReact />, <FaHtml5 />, <FaCss3/>, <FaNodeJs/>, <SiExpress/>, <SiMongodb/>],
     img : "/images/projects/2.png",
     features : 
@@ -50,9 +50,9 @@ const projectPageData = [
               "Booking System: Users can book available vehicles",
               "State Management: Global state for user sessions and bookings using Redux.",
               ],
-    weburl : "https://shopingo.vercel.app/",
+    weburl : "https://clothiqs.vercel.app/",
     giturl : "/",
-    conclusion : "RentWheels is more than just a practice project—it's a showcase of my ability to turn real-world requirements into a fully functional product. It highlights my proficiency in frontend development, responsive design, and cloud integration, all of which are essential for building modern web applications."
+    conclusion : "..."
   },
   {
     id : "appsobytes",
@@ -90,11 +90,11 @@ const projectPageData = [
     conclusion : "DeanSight may be a simple project, but it’s a solid representation of clean design and hands-on frontend work without relying on frameworks. It highlights my ability to build polished, functional landing pages from scratch—essential for many real-world projects and clients."
   },
   {
-    title : "Foodo – Food Delivery App UI",
-        intro : "Foodo is a fully responsive and dynamic food delivery web application built with Next.js. It offers a seamless user experience for browsing food items, managing a cart, and placing orders. The application demonstrates real-world functionality such as state management with Redux, data fetching with Axios, and a clean, modern UI with reusable components.",
+    title : "BiteBuddy – Food Delivery App UI",
+        intro : "BiteBuddy is a sleek and intuitive food ordering web app where users can explore dishes, view descriptions, and order effortlessly. It showcases my skills in building responsive interfaces and smooth user experiences.",
         tech : [<RiNextjsFill />, <FaCss3/>, <FaNodeJs/>, <SiExpress/>, <SiMongodb/>],
         img : "/images/projects/4.png",
-        id : "foodo",
+        id : "bitebuddy",
         features : 
               ["Modern UI Design: Clean and responsive layout with engaging visuals",
                 "Dynamic Food Menu: Fetched using Axios from backend/API",
@@ -103,7 +103,7 @@ const projectPageData = [
                 "Responsive Design: Works flawlessly on mobile, tablet, and desktop",
                 "Performance Optimized: Fast loading and SEO-ready with Next.js SSR/SSG"
               ],
-    weburl : "https://myfoodo.vercel.app/",
+    weburl : "https://bitebudy.vercel.app/",
     giturl : "/",
     conclusion : "Foodo is a production-ready food delivery app that reflects my understanding of building scalable, real-world web applications using modern React frameworks and tools. It showcases not only my technical skills in Next.js, Redux, and Axios, but also my ability to design clean user interfaces and manage dynamic application flow."
   },

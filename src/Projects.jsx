@@ -42,20 +42,20 @@ const projects = [
     link2 : "https://deansight.com/"
   },
   {
-    title : "Shopingo – E-commerce Web App",
-    intro : "A modern, dynamic e-commerce website built with React.js. Features include product listings via third-party APIs, user login/logout, cart functionality using React Context API, and responsive design for a smooth shopping experience.",
+    title : "Clothiqs – A clothing Web Application",
+    intro : "Clothiqs is a sleek and responsive clothing web app that offers a smooth shopping experience. Users can browse fashion collections, view product details, and shop with ease. Built to showcase modern UI and e-commerce functionality, it's a highlight of my frontend development skills.",
     skils : [<FaReact />, <FaHtml5 />, <FaCss3/>, <FaNodeJs/>, <SiExpress/>, <SiMongodb/>],
     img : "images/projects/2.png",
-    id : "shopingo",
-    link2 : "https://shopingo.vercel.app/"
+    id : "clothiqs",
+    link2 : "https://clothiqs.vercel.app/"
   },
   {
-    title : "Foodo – Food Delivery App UI",
-    intro : "A responsive and interactive food delivery website UI, designed with React. Includes homepage, food categories, search bar, and a sleek, modern design.",
+    title : "BiteBuddy – Food Delivery App UI",
+    intro : "BiteBuddy is a sleek and intuitive food ordering web app where users can explore dishes, view descriptions, and order effortlessly. It showcases my skills in building responsive interfaces and smooth user experiences.",
     skils : [<RiNextjsFill />, <FaCss3/>, <FaNodeJs/>, <SiExpress/>, <SiMongodb/>],
     img : "images/projects/4.png",
-    id : "foodo",
-    link2 : "https://myfoodo.vercel.app/"
+    id : "bitebuddy",
+    link2 : "https://bitebudy.vercel.app/"
   },
   {
     title : "Edusphere – Learning Platform",
